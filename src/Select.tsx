@@ -24,6 +24,6 @@ export const fieldToSelect = ({
 
 export const Select: React.ComponentType<SelectProps> = (
   props: SelectProps
-) => <MuiSelect {...fieldToSelect(props)} />;
+) => <MuiSelect native {...fieldToSelect(props)} />;
 
 Select.displayName = 'FormikMaterialUISelect';
