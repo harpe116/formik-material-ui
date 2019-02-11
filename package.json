@@ -1,6 +1,6 @@
 {
-  "name": "formik-material-ui",
-  "version": "0.0.16",
+  "name": "splat-formik-material-ui",
+  "version": "0.0.1",
   "typings": "dist/main.d.ts",
   "peerDependencies": {
     "@material-ui/core": ">=1.0.0",
@@ -91,7 +91,7 @@
     "build-storybook": "build-storybook",
     "build": "cross-env NODE_ENV=production tsc --noEmit --project tsconfig.json",
     "package": "rimraf build dist && cross-env NODE_ENV=production tsc -p tsconfig.package.json && rollup -c && rimraf .rpt2_cache dist/.rpt2_cache",
-    "test": "jest",
+    "test": "tslint --project tsconfig.json",
     "test:updateSnapshot": "jest --updateSnapshot",
     "lint": "tslint --project tsconfig.json",
     "lint:fix": "tslint --project tsconfig.json --fix",
